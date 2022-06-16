@@ -1,4 +1,6 @@
 .main
+    p 
+        margin-bottom: 40px
     &__promo
         min-height: 996px
         padding: 300px 0px
@@ -29,3 +31,216 @@
             img 
                 width: 42px
                 margin-left: 24px
+    &__about
+        min-height: 1116px
+        display: flex
+        align-items: center
+        position: relative
+        &-image
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            z-index: -1
+        &-undertitle
+            margin: 90px 0px 60px
+        &-text
+            width: 676px
+            .tabs
+                display: flex
+                justify-content: space-between
+                width: 100%
+                margin: 60px 0px
+                &__item
+                    width: 323px
+                    height: 124px
+                    background-color: #F3F3F5
+                    border-radius: 3px
+                    padding: 21px 49px 21px 21px
+                    &-title
+                        margin: 0px 0px 20px 44px
+                        position: relative
+                        &::before
+                            content: ''
+                            position: absolute
+                            display: block
+                            width: 30px
+                            height: 1px
+                            background-color: #000
+                            top: 50%
+                            left: -44px
+                            transform: translateY(-50%)
+    &__slider
+        min-height: 1011px
+        background-color: #F3F3F5
+        padding: 110px 0px
+        &-line
+            margin: 90px 0px 80px
+            display: flex
+            transition: 0.7s all
+        &-top 
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-arrows
+            img 
+                cursor: pointer
+                width: 48px
+            &-left
+                margin: 0px 10px 1px 0px
+        &-item
+            width: 1308px
+            min-width: 1308px
+            height: 475px
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            margin-right: 30px
+            &-image
+                position: relative
+                width: 763px
+                height: 100%
+                &-link
+                    position: absolute 
+                    display: flex
+                    flex-direction: column
+                    bottom: 22px
+                    left: 24px
+                    z-index: 2
+                    span 
+                        margin-bottom: 10px
+                    a
+                        &:hover 
+                            text-decoration: underline
+            &-text 
+                width: 515px
+            &-undertitle
+                margin: 19px 0px 35px
+            &-title
+                margin-left: 50px
+                position: relative
+                &::before
+                    position: absolute
+                    content: ''
+                    display: block
+                    height: 2px
+                    width: 30px
+                    background-color: #B93839
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: -50px
+            &-button 
+                img 
+                    width: 12px
+                    margin-left: 5px
+    &__services
+        position: relative
+        min-height: 973px
+        padding: 180px 0px
+        &-bg 
+            position: absolute
+            height: 100%
+            top: 0
+            right: 0
+            z-index: -1
+        &-blocks
+            display: flex
+            margin-top: 90px
+            justify-content: space-between
+            align-items: center
+        &-left
+            width: 602px
+            &-seo
+                display: flex
+                align-items: center
+                img 
+                    width: 46px
+                    margin-right: 30px
+            &-list
+                list-style-type: none
+                li 
+                    margin-bottom: 40px
+                    position: relative
+                    padding-left: 32px
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 12px
+                        height: 12px
+                        background-color: #474747
+                        border-radius: 100%
+                        left: 0
+                        top: 50%
+                        transform: translateY(-50%)
+        &-right
+            background: linear-gradient(278.07deg, #DDDDDD 5.6%, #F7F7F7 76.3%)
+            border-radius: 3px
+            width: 780px
+            height: 397px
+            position: relative
+            padding: 80px 59px 70px
+            &-title
+                display: flex
+                align-items: center
+                img 
+                    width: 46px
+                    margin-right: 30px
+            &-undertitle
+                max-width: 542px
+                margin-top: 60px
+            .seo 
+                position: absolute
+                width: 115px
+                bottom: 11px
+                right: 0
+    &__connect
+        background-color: #F3F3F5
+        min-height: 787px
+        display: flex
+        align-items: center
+        &-blocks
+            margin-top: 90px
+            display: flex
+            justify-content: space-between
+            height: 376px
+        &-image
+            position: relative
+            width: 671px
+            height: 100%
+        &-text 
+            width: 658px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+    &__call
+        min-height: 276px
+        padding: 80px 0px
+        position: relative
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-bg
+            position: absolute
+            height: 100%
+            left: 0
+            top: 0
+        &-title
+            position: relative
+            &::after
+                content: ''
+                width: 510px
+                height: 2px
+                background-color: #B93839
+                display: block
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -10px
+        &-top 
+            display: flex
+            &-item 
+                &:not(:last-child)
+                    margin-right: 37px

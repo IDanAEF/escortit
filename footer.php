@@ -1,8 +1,8 @@
 <footer class="footer header">
     <div class="container">
-        <div class="header__logo">
+        <a href="/" class="header__logo">
             <img src="/assets/images/logo_white.svg" alt="Escort It">
-        </div>
+        </a>
         <nav class="header__nav">
             <ul>
                 <?php
@@ -22,6 +22,6 @@
         </nav>
     </div>
 </footer>
-<script async src="/assets/js/script.js"></script>
+<script src="/assets/js/script.js"></script>
 </body>
 </html>

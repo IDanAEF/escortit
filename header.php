@@ -10,9 +10,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__logo">
+            <a href="/" class="header__logo">
                 <img src="/assets/images/logo.svg" alt="Escort It">
-            </div>
+            </a>
             <nav class="header__nav">
                 <?php
                     $headerMenu = Array(

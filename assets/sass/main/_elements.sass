@@ -34,9 +34,32 @@
     &_fz64
         font-size: 64px
         line-height: 80px
+    &_line 
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            height: 2px
+            width: 120px
+            background-color: #B93839
+            left: 0
+            top: -10px
 .button
     padding: 15px 86px
-    background: #B93839
+    background-color: #B93839
     border-radius: 3px
     border: none
     cursor: pointer
+    &_black
+        border: 2px solid #000000
+        background-color: unset
+.img
+    &_bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        z-index: 0
