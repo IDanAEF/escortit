@@ -1,0 +1,46 @@
+.header
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 4
+    &__logo
+        img 
+            width: 224px
+    .container, &__nav, &__lang
+        display: flex
+        align-items: center
+    .container
+        justify-content: space-between
+    &__lang 
+        margin-left: 70px
+        &-item 
+            width: 44px
+            height: 44px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 3px
+            cursor: pointer
+            &.active
+                background: #DEDEDE
+                cursor: default
+                color: #000000
+    &__nav
+        ul 
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            width: 637px
+            li 
+                a 
+                    display: flex
+                    height: 120px
+                    align-items: center
+                    opacity: 0.56
+                    transition: 0.3s all
+                    &:hover
+                        opacity: 1
+                &.active
+                    a 
+                        opacity: 1
