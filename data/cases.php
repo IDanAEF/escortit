@@ -24,7 +24,7 @@
         Array(
             'name' => 'escorteurogirls',
             'description' => 'Доска объявлений эскорт услуг. Реализована система личных кабинетов пользователей с возможностью самостоятельно публиковать объявления с прохождением модерации. Множество платного функционала.',
-            'type' => $casesType['escort'],
+            'type' => 'escort',
             'img' => '/assets/images/cases/escorteurogirls.jpg',
             'website' => 'https://escorteurogirls.com/',
             'slider' => true,
@@ -33,7 +33,7 @@
         Array(
             'name' => 'MOLLY / 24',
             'description' => 'Эскорт агентство.',
-            'type' => $casesType['escort'],
+            'type' => 'escort',
             'img' => '/assets/images/cases/molly24.jpg',
             'website' => 'http://molly24.com/',
             'slider' => true,
@@ -42,7 +42,7 @@
         Array(
             'name' => 'queenspalace.ru',
             'description' => 'Модельное агентство для поиска кадров.',
-            'type' => $casesType['model'],
+            'type' => 'model',
             'img' => '/assets/images/cases/qp.ru.jpg',
             'website' => 'http://queenspalace.ru/ ',
             'slider' => false,
@@ -51,7 +51,7 @@
         Array(
             'name' => 'queenspalace.com',
             'description' => 'Сайт крупного эскорт агентства.<br>Большой каталог моделей.',
-            'type' => $casesType['escort'],
+            'type' => 'escort',
             'img' => '/assets/images/cases/qp.com.jpg',
             'website' => 'https://queenspalace.com/ ',
             'slider' => true,
@@ -60,7 +60,7 @@
         Array(
             'name' => 'mira-escort-paris',
             'description' => 'Персональный сайт эскорт модели.',
-            'type' => $casesType['personal'],
+            'type' => 'personal',
             'img' => '/assets/images/cases/mira.jpg',
             'website' => 'http://mira-escort-paris.com/',
             'slider' => false,
@@ -69,7 +69,7 @@
         Array(
             'name' => 'bahrain-angels',
             'description' => 'Эскорт агентство.',
-            'type' => $casesType['escort'],
+            'type' => 'escort',
             'img' => '/assets/images/cases/angels.jpg',
             'website' => 'http://bahrain-angels.org/ ',
             'slider' => false,

@@ -2,6 +2,48 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./assets/es6/blocks/casesTabs.js":
+/*!****************************************!*\
+  !*** ./assets/es6/blocks/casesTabs.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function casesTabs() {
+  try {
+    const casesLists = document.querySelectorAll('.projects__cases-list-items'),
+          casesTabs = document.querySelectorAll('.projects__cases-list-tabs span');
+
+    function setPage() {
+      let i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      casesLists.forEach(item => {
+        item.classList.remove('active');
+      });
+      casesTabs.forEach(item => item.classList.remove('active'));
+      let type = casesTabs[i].getAttribute('id');
+      casesTabs[i].classList.add('active');
+      casesLists.forEach(item => {
+        if (type == item.getAttribute('data-type')) {
+          item.classList.add('active');
+        }
+      });
+    }
+
+    setPage();
+    casesTabs.forEach((item, i) => {
+      item.addEventListener('click', () => {
+        setPage(i);
+      });
+    });
+  } catch (e) {
+    console.log(e.stack);
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (casesTabs);
+
+/***/ }),
+
 /***/ "./assets/es6/blocks/slider.js":
 /*!*************************************!*\
   !*** ./assets/es6/blocks/slider.js ***!
@@ -100,11 +142,14 @@ var __webpack_exports__ = {};
   \****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks/slider */ "./assets/es6/blocks/slider.js");
+/* harmony import */ var _blocks_casesTabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/casesTabs */ "./assets/es6/blocks/casesTabs.js");
+
 
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  (0,_blocks_casesTabs__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 }();
 /******/ })()

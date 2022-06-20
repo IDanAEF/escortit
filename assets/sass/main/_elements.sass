@@ -45,6 +45,17 @@
             background-color: #B93839
             left: 0
             top: -10px
+    &_promo
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 175px
+            height: 3px
+            background-color: #B93839
+            left: 0
+            top: -10px
 .button
     padding: 15px 86px
     background-color: #B93839
@@ -54,6 +65,7 @@
     &_black
         border: 2px solid #000000
         background-color: unset
+        background: #F2F2F4
 .img
     &_bg
         position: absolute
@@ -63,3 +75,13 @@
         height: 100%
         object-fit: cover
         z-index: 0
+.promo_sect
+    min-height: 582px
+    background: linear-gradient(76.17deg, #DDDDDD 3.69%, #F2F2F4 78.22%)
+    position: relative
+    padding: 192px 0px
+    overflow: hidden
+    &-text
+        max-width: 759px
+    &-undertitle
+        margin-top: 40px

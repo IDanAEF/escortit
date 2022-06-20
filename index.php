@@ -6,7 +6,7 @@
     <section class="main__promo">
         <div class="container">
             <div class="main__promo-text">
-                <h1 class="main__promo-title title title_fz64 text_fw700 text_ffMerri">Создание сайтов для взрослых</h1>
+                <h1 class="main__promo-title title title_fz64 text_fw700 text_ffMerri title_promo">Создание сайтов для взрослых</h1>
                 <div class="main__promo-undertitle text text_fz20 text_ffMerri">Высококлассные решения для развлечений для взрослых</div>
                 <button class="main__promo-button button text_white text_fz20 text_fw700 text_ffMerri">Заказать</button>
             </div>

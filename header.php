@@ -8,7 +8,7 @@
     <title>Escort IT</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header <?php if ($_SERVER['REQUEST_URI'] != '/') echo 'page' ?>">
         <div class="container">
             <a href="/" class="header__logo">
                 <img src="/assets/images/logo.svg" alt="Escort It">
@@ -29,7 +29,7 @@
                         foreach($headerMenu as $key => $val) {
                             ?>
                                 <li <?php if ($key == $_SERVER['REQUEST_URI']) echo 'class="active"'; ?>>
-                                    <a href="<?=$key?>" class="text text_fz20"><?=$val?></a>
+                                    <a href="<?=$key?>" class="text text_fz20 <?php if ($_SERVER['REQUEST_URI'] != '/') echo 'text_fw500' ?>"><?=$val?></a>
                                 </li>
                             <?php
                         }
@@ -37,7 +37,7 @@
                 </ul>
                 <div class="header__lang">
                     <div class="header__lang-item text text_fz20 active">RU</div>
-                    <a href="/en/" class="header__lang-item text text_fz20">EN</a>
+                    <a href="/en<?=$_SERVER['REQUEST_URI']?>" class="header__lang-item text text_fz20">EN</a>
                 </div>
             </nav>
         </div>

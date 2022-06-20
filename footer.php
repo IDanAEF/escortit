@@ -17,7 +17,7 @@
             </ul>
             <div class="header__lang">
                 <div class="header__lang-item text text_fz20 text_white active">RU</div>
-                <a href="/en/" class="header__lang-item text text_fz20 text_white">EN</a>
+                <a href="/en<?=$_SERVER['REQUEST_URI']?>" class="header__lang-item text text_fz20 text_white">EN</a>
             </div>
         </nav>
     </div>

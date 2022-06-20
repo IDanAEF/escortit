@@ -4,6 +4,20 @@
     left: 50%
     transform: translateX(-50%)
     z-index: 4
+    &.page
+        position: static
+        transform: unset
+        left: unset
+        background-color: white
+        .header__nav
+            ul 
+                li 
+                    &.active
+                        a
+                            border-bottom: 4px solid #000
+                    a
+                        &:hover
+                            border-bottom: 4px solid #000
     &__logo
         img 
             width: 224px
