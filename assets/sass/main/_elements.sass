@@ -62,10 +62,15 @@
     border-radius: 3px
     border: none
     cursor: pointer
+    transition: 0.4s all
+    &:hover 
+        background-color: #A51B1D
     &_black
         border: 2px solid #000000
-        background-color: unset
-        background: #F2F2F4
+        background-color: #F2F2F4
+        &:hover
+            background-color: #000
+            color: #fff
 .img
     &_bg
         position: absolute
@@ -85,3 +90,45 @@
         max-width: 759px
     &-undertitle
         margin-top: 40px
+.form_task
+    min-height: 794px
+    padding: 170px 0px
+    .container
+        display: flex
+        justify-content: space-between
+    &-text
+        max-width: 560px
+    &-title
+        margin-bottom: 90px
+    &-field
+        width: 692px
+        form 
+            input 
+                position: absolute
+                width: 100%
+                border: none
+                border-bottom: 1px solid #000000
+                outline: none
+                padding-bottom: 10px
+                transition: 0.5s all
+                bottom: 0
+                &.active
+                    bottom: -30px
+            label
+                position: absolute
+                z-index: 3
+            .input_block
+                position: relative
+                display: flex
+                justify-content: space-between
+                height: 29px
+                margin-bottom: 70px
+                &-item
+                    position: relative
+                    width: 45%
+            .personal
+                opacity: 0.5
+                margin-top: 38px
+            .for_file
+                text-decoration: underline
+                cursor: pointer

@@ -11,7 +11,14 @@
                 <button class="main__promo-button button text_white text_fz20 text_fw700 text_ffMerri">Заказать</button>
             </div>
         </div>
-        <a href="" class="main__promo-telegram text text_fz22">
+        <div class="main__promo-animate">
+            <img id="step4" src="/assets/images/main/step4.png" alt="">
+            <img id="step3" src="/assets/images/main/step3.png" alt="">
+            <img id="step2" src="/assets/images/main/step2.png" alt="">
+            <img id="step1" src="/assets/images/main/step1.png" alt="">
+            <img id="step0" src="/assets/images/main/step0.png" alt="">
+        </div>
+        <a href="" target="_blank" class="main__promo-telegram text text_fz22">
             Свяжитесь с нами!
             <img src="/assets/images/telegram.svg" alt="Telegram">
         </a>
@@ -65,13 +72,13 @@
                                         <img src="<?=$val['img']?>" alt="<?=$val['name']?>" class="img_bg">
                                         <div class="main__slider-item-image-link">
                                             <span class="text text_fz16">Сайт</span>
-                                            <a href="<?=$val['website']?>" class="text text_fz16 text_fw600"><?=$val['website']?></a>
+                                            <a href="<?=$val['website']?>" target="_blank" class="text text_fz16 text_fw600"><?=$val['website']?></a>
                                         </div>
                                     </div>
                                     <div class="main__slider-item-text">
-                                        <a href="<?=$val['detail']?>" class="main__slider-item-title text_red title_fz30 text_ffMerri"><?=$val['name']?></a>
+                                        <a href="<?=$val['detail']?>" target="_blank" class="main__slider-item-title text_red title_fz30 text_ffMerri"><?=$val['name']?></a>
                                         <div class="main__slider-item-undertitle text text_fz22"><?=$val['description']?></div>
-                                        <a href="<?=$val['detail']?>" class="main__slider-item-button text text_fz16">
+                                        <a href="<?=$val['detail']?>" target="_blank" class="main__slider-item-button text text_fz16">
                                             Перейти к кейсу <img src="/assets/images/arr_slider.svg" alt="">
                                         </a>
                                     </div>

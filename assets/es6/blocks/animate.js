@@ -1,0 +1,21 @@
+function animate() {
+    //mainpage promo animate
+    try {
+        const animField = document.querySelector('.main__promo-animate');
+
+        animField.classList.add('anim');
+
+        if (animField) {
+            setInterval(() => {
+                animField.classList.remove('anim');
+                setTimeout(() => {
+                    animField.classList.add('anim');
+                }, 1500)
+            }, 23000);
+        }
+    } catch(e) {
+        console.log(e.stack);
+    }
+}
+
+export default animate;

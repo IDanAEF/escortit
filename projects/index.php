@@ -39,15 +39,15 @@
                                             <img src="<?=$val['img']?>" alt="<?=$val['name']?>" class="img_bg">
                                             <div class="projects__cases-item-image-link">
                                                 <span class="text">Сайт</span>
-                                                <a href="<?=$val['website']?>" class="text text_fw600"><?=$val['website']?></a>
+                                                <a href="<?=$val['website']?>" target="_blank" class="text text_fw600"><?=$val['website']?></a>
                                             </div>
                                         </div>
                                         <div class="projects__cases-item-text">
-                                            <a href="<?=$val['detail']?>" class="projects__cases-item-title text_red text_fz20 text_fw600"><?=$val['name']?></a>
+                                            <a href="<?=$val['detail']?>" target="_blank" class="projects__cases-item-title text_red text_fz20 text_fw600"><?=$val['name']?></a>
                                             <div class="projects__cases-item-undertitle text text_fz16"><?=$val['description']?></div>
                                         </div>
                                     </div>
-                                    <a href="<?=$val['detail']?>" class="projects__cases-item-button text text_fz16">
+                                    <a href="<?=$val['detail']?>" target="_blank" class="projects__cases-item-button text text_fz16">
                                         <span>Перейти к кейсу</span><img src="/assets/images/arr_right_light.svg" alt="">
                                     </a>
                                 </article>
@@ -69,15 +69,15 @@
                                                         <img src="<?=$val['img']?>" alt="<?=$val['name']?>" class="img_bg">
                                                         <div class="projects__cases-item-image-link">
                                                             <span class="text">Сайт</span>
-                                                            <a href="<?=$val['website']?>" class="text text_fw600"><?=$val['website']?></a>
+                                                            <a href="<?=$val['website']?>" target="_blank" class="text text_fw600"><?=$val['website']?></a>
                                                         </div>
                                                     </div>
                                                     <div class="projects__cases-item-text">
-                                                        <a href="<?=$val['detail']?>" class="projects__cases-item-title text_red text_fz20 text_fw600"><?=$val['name']?></a>
+                                                        <a href="<?=$val['detail']?>" target="_blank" class="projects__cases-item-title text_red text_fz20 text_fw600"><?=$val['name']?></a>
                                                         <div class="projects__cases-item-undertitle text text_fz16"><?=$val['description']?></div>
                                                     </div>
                                                 </div>
-                                                <a href="<?=$val['detail']?>" class="projects__cases-item-button text text_fz16">
+                                                <a href="<?=$val['detail']?>" target="_blank" class="projects__cases-item-button text text_fz16">
                                                     <span>Перейти к кейсу</span><img src="/assets/images/arr_right_light.svg" alt="">
                                                 </a>
                                             </article>

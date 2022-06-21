@@ -6,3 +6,177 @@
             top: 50%
             transform: translateY(-50%)
             right: 0
+    &__exp
+        min-height: 786px
+        padding: 170px 0px
+        .container
+            display: flex
+            justify-content: space-between
+        &-image
+            margin-left: 75px
+        &-text 
+            max-width: 646px
+            position: relative
+            &-perk
+                position: absolute
+                width: 48px
+                top: -5px
+                left: -88px
+        &-undertitle
+            margin: 30px 0px 62px
+            span
+                display: block
+                margin-bottom: 17px
+    &__adv
+        min-height: 790px
+        padding: 53px 0px
+        background-color: #F3F3F5
+        .container
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-image
+            max-width: 551px
+        &-info
+            width: 798px
+        &-items
+            margin-top: 90px
+            display: grid
+            grid-template: auto / repeat(2, 46%)
+            grid-auto-rows: auto
+            justify-content: space-between
+            gap: 67px 0px
+        &-item 
+            &-number
+                position: relative
+                display: inline-block
+                font-size: 44px
+                line-height: 55px
+                border-bottom: 1px solid #C5C5C5
+                &::before
+                    content: ''
+                    position: absolute
+                    display: block
+                    width: 14px
+                    height: 2px
+                    background-color: #000
+                    left: 0
+                    bottom: 0
+            &-title
+                margin: 18px 0px 20px
+    &__comm 
+        min-height: 634px
+        padding: 170px 0px
+        .container
+            display: flex
+            justify-content: space-between
+        &-title
+            max-width: 606px
+        &-info
+            width: 628px
+            display: grid
+            grid-template: auto / repeat(2, 44%)
+            grid-auto-rows: auto 
+            gap: 49px 0px
+            justify-content: space-between
+        &-item 
+            &-undertitle
+                margin-top: 29px
+            &-title 
+                span 
+                    font-size: 47px
+                    line-height: 64px
+    &__slider
+        min-height: 811px
+        padding: 130px 0px 90px
+        position: relative
+        &-bg
+            position: absolute
+            width: 100%
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+            z-index: -1 
+        &-line 
+            margin-top: 130px
+            position: relative
+        &-arrows
+            display: flex
+            align-items: center
+            position: absolute
+            bottom: -67px
+            right: 0px
+            &-item 
+                width: 190px
+                border-radius: 100%
+                background-color: #fff
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                height: 0px
+                opacity: 0
+                visibility: hidden
+                transition: 0.5s opacity
+                &.active
+                    height: 190px
+                    opacity: 1
+                    visibility: visible
+                &:hover 
+                    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2)
+                &:not(:last-child)
+                    margin-right: 25px
+                &.right
+                    span 
+                        margin-right: 15px
+                    img 
+                        margin-left: 100px
+                &.left
+                    span 
+                        margin-left: 15px
+                    img 
+                        margin-right: 100px
+                img 
+                    width: 39px
+                    margin-top: 5px
+        &-item 
+            height: 0px
+            opacity: 0
+            visibility: hidden
+            display: flex
+            justify-content: space-between
+            width: 1220px
+            transition: 0.8s opacity
+            &-image 
+                max-width: 640px
+                img 
+                    width: 100%
+            &-info 
+                width: 515px
+                margin-top: 15px
+            &-undertitle
+                margin: 19px 0px 35px
+            &-title
+                position: relative
+                padding-left: 50px
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 30px
+                    height: 2px
+                    background-color: #B93839
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+            &-link 
+                display: flex
+                align-items: center
+                img 
+                    width: 16px
+                    margin-left: 10px
+            &.active
+                height: auto
+                opacity: 1
+                visibility: visible
