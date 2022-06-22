@@ -39,6 +39,11 @@
                     <div class="header__lang-item text text_fz20 active">RU</div>
                     <a href="/en<?=$_SERVER['REQUEST_URI']?>" class="header__lang-item text text_fz20">EN</a>
                 </div>
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>

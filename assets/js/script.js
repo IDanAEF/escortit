@@ -158,6 +158,36 @@ const mask = selector => {
 
 /***/ }),
 
+/***/ "./assets/es6/blocks/modals.js":
+/*!*************************************!*\
+  !*** ./assets/es6/blocks/modals.js ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function modals() {
+  //mobile menu
+  try {
+    const headerHamburger = document.querySelector('.header__hamburger'),
+          headerMenu = document.querySelector('.header__nav ul');
+    window.addEventListener('click', e => {
+      if (e.path.some(item => item == headerHamburger)) {
+        headerMenu.classList.toggle('active');
+        headerHamburger.classList.toggle('active');
+      } else if (e.path.some(item => item != headerMenu || item.nodeName == 'A')) {
+        headerMenu.classList.remove('active');
+        headerHamburger.classList.remove('active');
+      }
+    });
+  } catch (e) {
+    console.log(e.stack);
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (modals);
+
+/***/ }),
+
 /***/ "./assets/es6/blocks/slider.js":
 /*!*************************************!*\
   !*** ./assets/es6/blocks/slider.js ***!
@@ -297,6 +327,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/forms */ "./assets/es6/blocks/forms.js");
 /* harmony import */ var _blocks_mask__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/mask */ "./assets/es6/blocks/mask.js");
 /* harmony import */ var _blocks_animate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/animate */ "./assets/es6/blocks/animate.js");
+/* harmony import */ var _blocks_modals__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/modals */ "./assets/es6/blocks/modals.js");
+
 
 
 
@@ -310,6 +342,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_forms__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_blocks_mask__WEBPACK_IMPORTED_MODULE_3__["default"])('input[type="tel"]');
   (0,_blocks_animate__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  (0,_blocks_modals__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 }();
 /******/ })()

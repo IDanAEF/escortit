@@ -1,0 +1,245 @@
+@media (max-width: 1400px) 
+    .container
+        width: 1140px
+    .form
+        &_task
+            &-text
+                max-width: 500px
+            &-field
+                width: 580px
+    .contacts
+        &__promo
+            &-bg 
+                right: 10%
+@media (max-width: 1200px)
+    .container
+        width: 960px
+    .text
+        &_fz16
+            font-size: 14px
+            line-height: 20px
+        &_fz20
+            font-size: 18px
+            line-height: 23px
+        &_fz22 
+            font-size: 20px
+            line-height: 26px
+    .button
+        padding: 11px 63px
+    .title
+        &_fz39 
+            font-size: 32px
+            line-height: 36px
+        &_fz64
+            font-size: 48px
+            line-height: 60px
+        &_promo
+            &::before
+                width: 140px
+    .promo
+        &_sect
+            min-height: 460px
+            padding: 160px 0px
+            &-undertitle
+                margin-top: 27px
+            &-text 
+                max-width: 480px
+    .form
+        &_task
+            min-height: 650px
+            padding: 140px 0px
+            &-title
+                margin-bottom: 60px
+            &-text 
+                max-width: 419px
+            &-field
+                width: 480px
+                form 
+                    .input_block
+                        margin-bottom: 54px
+                    .personal
+                        margin-top: 21px
+    .header
+        &__logo
+            img 
+                width: 166px
+        &__nav
+            ul 
+                width: 572px
+                li 
+                    a 
+                        height: 90px
+        &__lang 
+            margin-left: 43px
+            &-item 
+                width: 40px
+                height: 40px
+    .contacts
+        &__promo 
+            &-bg 
+                width: 357px
+@media (max-width: 992px)
+    .container
+        width: 720px
+    .footer
+        display: none !important
+    .header
+        position: fixed !important
+        width: 100%
+        left: 50%
+        transform: translateX(-50%)
+        height: 70px
+        display: flex
+        background-color: #fff
+        &__lang 
+            margin-left: 0
+            margin-right: 43px
+        &__hamburger
+            display: flex
+        &__nav 
+            ul 
+                overflow-y: auto
+                width: 464px
+                max-height: 500px
+                position: absolute
+                right: -100%
+                visibility: hidden
+                top: 100%
+                flex-direction: column
+                z-index: 10
+                background-color: #fff
+                transition: 0.5s all
+                box-shadow: -2px 8px 10px rgba(0, 0, 0, 0.2)
+                &.active
+                    right: 0
+                    visibility: visible
+                li 
+                    &.active
+                        a
+                            border-bottom: 4px solid #000
+                    a 
+                        height: 75px
+                        padding-left: 45px
+                        &:hover 
+                            border-bottom: 4px solid #000
+    .promo
+        &_sect 
+            min-height: 460px
+            padding: 190px 0px 140px
+            &-text 
+                max-width: 382px
+    .form 
+        &_task 
+            min-height: 650px
+            padding: 105px 0px
+            .container
+                flex-direction: column
+            &-text
+                max-width: 100%
+            &-field
+                width: 100%
+                margin-top: 80px
+    .contacts
+        &__promo 
+            &-bg 
+                width: 310px
+                right: 5%
+                top: 58%
+@media (max-width: 768px)
+    .container
+        width: 540px
+    .text 
+        &_fz20 
+            font-size: 16px
+            line-height: 20px
+        &_fz22 
+            font-size: 17px
+            line-height: 21px
+    .title
+        &_fz39 
+            font-size: 27px
+            line-height: 30px
+        &_fz64 
+            font-size: 35px
+            line-height: 40px
+        &_line 
+            &::before
+                width: 85px
+                height: 1px
+        &_promo 
+            &::before
+                width: 91px
+                height: 2px
+    .button
+        padding: 9px 41px
+    .promo
+        &_sect
+            min-height: 390px
+            padding: 160px 0px 100px
+            &-text 
+                max-width: 308px
+            &-undertitle
+                margin-top: 20px
+    .form 
+        &_task 
+            min-height: 600px
+            padding: 75px 0px
+            &-title 
+                margin-bottom: 34px
+            &-field 
+                form 
+                    .input_block
+                        margin-bottom: 45px
+    .header
+        height: 50px
+        &__logo 
+            img 
+                width: 151px
+        &__nav 
+            ul 
+                width: 362px
+                max-height: 410px
+                li 
+                    &.active
+                        a 
+                            border-bottom: 2px solid #000 !important
+                    a 
+                        height: 67px
+                        padding-left: 33px
+                        &:hover 
+                            border-bottom: 2px solid #000 !important
+    .contacts
+        &__promo
+            &-bg 
+                width: 275px
+                right: -5%
+@media (max-width: 576px)
+    .container
+        width: 100%
+        padding: 0px 15px
+    .promo 
+        &_sect 
+            &-text 
+                max-width: 100%
+    .form 
+        &_task 
+            &-field
+                form 
+                    .input_block
+                        &-item 
+                            width: 49%
+    .header
+        &__logo 
+            img 
+                width: 129px
+        &__lang 
+            margin-right: 20px
+        &__nav 
+            ul 
+                width: 100%
+    .contacts
+        &__promo 
+            &-bg 
+                width: 258px
+                right: -42%
+                filter: opacity(0.4)
