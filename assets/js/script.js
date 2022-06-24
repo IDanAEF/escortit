@@ -222,10 +222,10 @@ function slider() {
       startPos = e.changedTouches[0].screenX;
     });
     sliderLine.addEventListener('touchend', e => {
-      if (startPos - e.changedTouches[0].screenX > 150) {
+      if (startPos - e.changedTouches[0].screenX > 50) {
         curr == sliderItems.length - 1 ? curr = 0 : curr++;
         sliderLine.style.transform = `translateX(-${curr * itemWidth()}px)`;
-      } else if (startPos - e.changedTouches[0].screenX < 150) {
+      } else if (startPos - e.changedTouches[0].screenX < -50) {
         curr == 0 ? curr = sliderItems.length - 1 : curr--;
         sliderLine.style.transform = `translateX(-${curr * itemWidth()}px)`;
       }

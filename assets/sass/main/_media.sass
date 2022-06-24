@@ -6,9 +6,19 @@
 @media (max-width: 1430px)
     .container
         width: 1380px
+@media (max-width: 1550px)
+    .main
+        &__promo
+            &-animate
+                right: 29px
+        &__about
+            &-image 
+                right: -134px
 @media (max-width: 1400px) 
     .container
         width: 1140px
+    p 
+        margin-bottom: 34px
     .title
         &_fz30 
             font-size: 26px
@@ -86,6 +96,106 @@
                 max-width: 444px
             &-info
                 max-width: 611px
+    .about
+        &__exp 
+            &-image 
+                margin-left: 50px
+        &__slider
+            &-item 
+                width: 1140px
+                &-image 
+                    max-width: 580px
+        &__adv 
+            &-info 
+                width: 635px
+            &-image 
+                max-width: 462px
+        &__comm
+            &-info 
+                width: 517px
+    .main
+        &__promo 
+            min-height: 875px
+            padding: 245px 0px
+            &-text 
+                max-width: 555px
+                margin-top: 0
+            &-undertitle
+                margin: 40px 0px
+            &-animate 
+                right: 2px
+                width: 658px
+                height: 658px
+                #step
+                    &4 
+                        width: 581px
+                    &3 
+                        width: 508px
+                    &2 
+                        width: 346px
+                    &1 
+                        width: 271px
+                    &0 
+                        width: 658px
+            &-telegram 
+                img 
+                    margin-left: 15px
+        &__about 
+            min-height: 945px
+            &-image 
+                width: 778px
+                right: -158px
+            &-text 
+                width: 579px
+                .tabs 
+                    margin: 40px 0px
+            &-undertitle 
+                margin: 60px 0px
+        &__slider 
+            min-height: 824px
+            &-item 
+                width: 1000px
+                min-width: 1000px
+                height: 349px
+                &-image 
+                    width: 557px
+                    &-link 
+                        left: 14px
+                        bottom: 15px
+                &-text 
+                    width: 423px
+                &-undertitle
+                    margin: 19px 0px
+        &__services
+            min-height: 694px
+            padding: 120px 0px
+            &-blocks
+                margin-top: 62px
+            &-left 
+                width: 500px
+                &-list 
+                    li 
+                        margin-bottom: 28px
+            &-right
+                width: 602px
+                padding: 57px 48px 49px
+                .seo 
+                    width: 91px
+                &-undertitle
+                    max-width: 476px
+                    margin-top: 43px
+        &__connect
+            min-height: 674px
+            &-blocks
+                margin-top: 47px
+                height: 331px
+            &-image 
+                width: 574px
+            &-text 
+                width: 533px
+        &__call 
+            padding: 70px 0px
+            min-height: 240px
 @media (max-width: 1200px)
     p 
         margin-bottom: 30px
@@ -99,8 +209,8 @@
             font-size: 18px
             line-height: 23px
         &_fz22 
-            font-size: 20px
-            line-height: 26px
+            font-size: 19px
+            line-height: 23px
     .button
         padding: 11px 63px
     .title
@@ -261,12 +371,198 @@
                         height: 6px
             &-image 
                 max-width: 378px
+    .about
+        &__promo 
+            &-bg 
+                right: -8%
+        &__exp 
+            min-height: 597px
+            padding: 120px 0px
+            &-image 
+                max-width: 291px
+                align-self: center
+            &-text 
+                max-width: 533px
+                &-perk 
+                    width: 28px
+                    left: -51px
+            &-undertitle
+                margin: 23px 0px 43px
+        &__adv 
+            min-height: 584px
+            &-items 
+                margin-top: 47px
+                gap: 47px 0px
+            &-item 
+                &-number 
+                    font-size: 31px
+                    line-height: 43px
+                &-title 
+                    margin: 11px 0px
+            &-info 
+                width: 569px
+            &-image 
+                max-width: 346px
+        &__slider 
+            min-height: 622px
+            padding: 90px 0px
+            &-line 
+                margin-top: 78px
+            &-item 
+                width: 900px
+                &-image 
+                    max-width: 456px
+                &-info 
+                    width: 390px
+                &-undertitle
+                    margin: 19px 0px 28px
+                &-link 
+                    img 
+                        width: 12px
+                        margin-left: 5px
+            &-arrows
+                right: 38px
+                &-item 
+                    width: 170px
+                    &.active
+                        height: 170px
+                    &.right
+                        img 
+                            margin-left: 92px
+                    &.left
+                        img 
+                            margin-right: 92px
+                    img 
+                        width: 29px
+        &__comm 
+            min-height: 535px
+            padding: 120px 0px
+            &-title 
+                max-width: 413px
+            &-info 
+                width: 522px
+            &-item 
+                &-undertitle
+                    margin-top: 17px
+    .main
+        &__promo 
+            min-height: 682px
+            padding: 208px 0px
+            &-text 
+                max-width: 420px
+            &-undertitle 
+                margin: 29px 0px
+            &-animate 
+                right: 50px
+                bottom: 57px
+                width: 527px
+                height: 527px
+                #step
+                    &4 
+                        width: 446px
+                    &3 
+                        width: 390px
+                    &2 
+                        width: 276px
+                    &1 
+                        width: 217px
+                    &0 
+                        width: 527px
+            &-telegram 
+                bottom: 22px
+                right: 22px
+                img 
+                    width: 30px
+                    margin-left: 15px
+        &__about 
+            min-height: 758px
+            &-image 
+                right: -195px
+                width: 708px
+            &-text 
+                width: 488px
+                .tabs
+                    margin: 30px 0px
+                    &__item 
+                        padding: 19px
+                        &-title 
+                            margin: 0px 0px 12px 36px
+                            &::before
+                                width: 25px
+                                left: -36px
+            &-undertitle
+                margin: 42px 0px
+        &__slider
+            min-height: 615px
+            padding: 63px 0px
+            &-arrows
+                img 
+                    width: 39px
+            &-line 
+                margin: 60px 0px
+            &-item 
+                width: 880px
+                min-width: 880px
+                height: 293px
+                &-image 
+                    width: 485px
+                &-text 
+                    width: 367px
+        &__services
+            min-height: 515px
+            padding: 75px 0px
+            &-blocks
+                margin-top: 50px
+            &-left 
+                width: 416px
+                &-list 
+                    li 
+                        margin-bottom: 21px
+                        padding-left: 22px
+                        &::before
+                            width: 8px
+                            height: 8px
+            &-right 
+                width: 500px
+                padding: 40px
+                &-undertitle
+                    max-width: 405px
+                    margin-top: 24px
+                &-title 
+                    img 
+                        width: 38px
+                        margin-right: 14px
+                .seo 
+                    width: 58px
+        &__connect 
+            min-height: 533px
+            &-blocks 
+                margin-top: 42px
+                height: 272px
+            &-image 
+                width: 472px
+            &-text 
+                width: 454px
+        &__call 
+            min-height: 186px
+            padding: 55px 0px
+            &-top 
+                &-item 
+                    &:not(:last-child)
+                        margin-right: 21px
+            &-title 
+                &::after
+                    width: 397px
 @media (max-width: 992px)
     p 
         margin-bottom: 20px
     .title
         &_fz30 
             font-size: 19px
+            line-height: 21px
+    .text
+        &_fz22 
+            font-size: 17px
             line-height: 21px
     .container
         width: 720px
@@ -402,6 +698,147 @@
                 max-width: 396px
             &-image
                 max-width: 274px
+    .about
+        &__promo 
+            &-bg 
+                right: -27%
+        &__exp 
+            min-height: 525px
+            padding: 90px 0px
+            &-image 
+                max-width: 227px
+                margin-left: 25px
+            &-text 
+                max-width: 418px
+                &-perk 
+                    width: 25px
+                    left: -44px
+            &-undertitle
+                margin: 19px 0px 34px
+                span 
+                    margin-bottom: 8px
+        &__adv 
+            &-info
+                width: 407px
+            &-image 
+                max-width: 292px
+            &-items 
+                margin-top: 34px
+                gap: 23px 0px
+        &__slider 
+            min-height: 574px
+            padding: 70px 0px
+            &-line 
+                margin-top: 50px
+            &-item 
+                width: 700px
+                &-image 
+                    max-width: 352px
+                &-info 
+                    width: 307px
+            &-arrows
+                right: 38px
+                bottom: -115px
+                &-item 
+                    width: 140px
+                    &.right
+                        span 
+                            margin-right: 8px
+                        img 
+                            margin-left: 74px
+                    &.left 
+                        span 
+                            margin-left: 8px
+                        img 
+                            margin-right: 74px
+                    &:not(:last-child) 
+                        margin-right: 15px
+                    &.active
+                        height: 140px
+        &__comm 
+            min-height: 472px
+            padding: 90px 0px
+            &-title 
+                max-width: 359px
+            &-info 
+                width: 352px
+                grid-template: auto / repeat(2, 46%)
+                gap: 23px 0px
+    .main
+        &__promo 
+            min-height: 634px
+            padding: 187px 0px
+            &-animate
+                right: -103px
+                bottom: 78px
+                width: 479px
+                height: 479px
+                #step
+                    &4
+                        width: 400px
+                    &3 
+                        width: 352px
+                    &2 
+                        width: 253px
+                    &1 
+                        width: 200px
+                    &0 
+                        width: 479px
+        &__about 
+            min-height: 746px
+            &-image 
+                width: 608px
+                right: -253px
+            &-text 
+                width: 416px
+                .tabs
+                    margin: 20px 0px
+            &-undertitle
+                margin: 30px 0px
+        &__slider
+            min-height: 529px
+            padding: 63px 0px
+            &-line 
+                margin: 44px 0px
+            &-item 
+                width: 700px
+                min-width: 700px
+                height: 247px
+                &-text 
+                    width: 304px
+                &-image 
+                    width: 378px
+                    &-link 
+                        span 
+                            margin-bottom: 0
+                            font-size: 11px
+                        a 
+                            font-size: 11px
+                &-undertitle
+                    margin: 13px 0px
+        &__services
+            &-blocks 
+                margin-top: 30px
+            &-left 
+                width: 341px
+            &-right
+                width: 353px
+                padding: 30px
+                &-undertitle
+                    max-width: 273px
+                    margin-top: 24px
+        &__connect 
+            min-height: 492px
+            &-blocks
+                margin-top: 42px
+                height: 258px
+            &-text 
+                width: 328px
+            &-image 
+                width: 373px
+        &__call 
+            min-height: 140px
+            padding: 33px 0px
 @media (max-width: 768px)
     .container
         width: 540px
@@ -562,12 +999,136 @@
                 margin: 17px 0px 26px
             &-image
                 max-width: 332px
+    .about
+        &__exp 
+            min-height: 525px
+            padding: 60px 0px
+            .container
+                flex-direction: column
+            &-image 
+                max-width: 251px
+                margin-left: 0
+                margin-bottom: 40px
+            &-text 
+                max-width: 100%
+        &__adv 
+            min-height: 584px
+            padding: 40px 0px
+            .container
+                flex-direction: column-reverse
+            &-info 
+                width: 100%
+            &-image 
+                max-width: 324px
+                margin-bottom: 38px
+            &-items 
+                grid-template: auto / repeat(2, 48%)
+        &__slider 
+            min-height: 730px
+            &-bg 
+                width: 145%
+            &-arrows 
+                right: 50%
+                transform: translateX(50%)
+                bottom: -158px
+            &-items 
+                display: flex
+                flex-direction: column
+                align-items: center
+            &-item 
+                width: 460px
+                flex-direction: column
+                align-items: center
+                &-image 
+                    max-width: 320px
+                &-info 
+                    width: 100%
+        &__comm 
+            min-height: 472px
+            padding: 70px 0px
+            .container
+                flex-direction: column
+            &-title 
+                max-width: 100%
+            &-info 
+                width: 100%
+                margin-top: 45px
+    .main
+        &__promo
+            min-height: 591px
+            padding: 187px 0px
+            &-text 
+                max-width: 314px
+            &-telegram 
+                bottom: 17px
+                right: 17px
+                img 
+                    width: 28px
+                    margin-left: 9px
+            &-animate 
+                right: -180px
+                bottom: 40px
+        &__connect 
+            min-height: 760px
+            &-blocks 
+                margin-top: 40px
+                flex-direction: column
+                align-items: center
+                height: unset
+            &-text 
+                width: 100%
+            &-image 
+                width: 100%
+                margin-bottom: 38px
+                img 
+                    position: static
+        &__services
+            min-height: 515px
+            padding: 62px 0px
+            &-bg 
+                right: -276px
+                filter: opacity(0.2)
+            &-blocks
+                flex-direction: column
+            &-left
+                margin-bottom: 38px
+                width: 100%
+            &-right
+                width: 100%
+                &-undertitle
+                    max-width: 90%
+        &__slider
+            &-item 
+                width: 430px
+                min-width: 430px
+                height: unset
+                flex-direction: column
+                align-items: center
+                justify-content: flex-start
+                &-image 
+                    height: 260px
+                    margin-bottom: 24px
+                    width: 100%
+                &-text
+                    width: 100%
+        &__about 
+            min-height: 597px
+            &-image 
+                width: 608px
+                right: -378px
+                filter: opacity(0.2)
+            &-text 
+                width: 100%
 @media (max-width: 576px)
     p 
         margin-bottom: 13px
     .container
         width: 100%
         padding: 0px 15px
+    .button
+        display: block
+        margin: 0 auto
+        width: fit-content
     .promo 
         &_sect 
             &-text 
@@ -659,3 +1220,64 @@
             &-button 
                 display: block
                 margin: 0 auto
+    .about
+        &__promo 
+            &-bg 
+                filter: opacity(0.3)
+        &__slider 
+            &-item 
+                width: 100%
+                max-width: 460px
+    .main
+        &__promo 
+            min-height: 591px
+            padding: 166px 0px
+            &-text 
+                max-width: 100%
+            &-undertitle 
+                margin: 32px 0px
+                color: #000
+            &-button 
+                display: block
+                margin: 0 auto
+            &-animate
+                right: 50%
+                transform: translateX(50%)
+                opacity: 0.4
+            &-telegram 
+                right: 50%
+                transform: translateX(50%)
+                width: fit-content
+        &__about 
+            min-height: 836px
+            &-text 
+                .tabs
+                    flex-direction: column
+                    &__item 
+                        width: 100%
+                        &:not(:last-child)
+                            margin-bottom: 17px
+        &__slider 
+            &-arrows
+                img 
+                    width: 33px
+                &-left
+                    margin: 0px 1px 1px 0px
+            &-item 
+                width: 290px
+                min-width: 290px
+                &-image 
+                    height: 190px
+        &__services
+            &-bg 
+                right: -415px
+        &__call 
+            &-top 
+                flex-direction: column
+                text-align: center
+            &-title 
+                font-size: 30px
+                &::after
+                    width: 249px
+            &-bg 
+                filter: opacity(0.2)
