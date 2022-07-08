@@ -74,6 +74,43 @@ function casesTabs() {
 
 /***/ }),
 
+/***/ "./assets/es6/blocks/form.js":
+/*!***********************************!*\
+  !*** ./assets/es6/blocks/form.js ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function form() {
+  try {
+    const forms = document.querySelectorAll('form');
+
+    async function postData(url, data) {
+      let res = await fetch(url, {
+        method: "POST",
+        body: data
+      });
+      return await res.text();
+    }
+
+    forms.forEach(item => {
+      item.addEventListener('submit', e => {
+        e.preventDefault();
+        const formData = new FormData(item);
+        postData('mail.php', formData).then(res => {
+          console.log(res);
+        });
+      });
+    });
+  } catch (e) {
+    console.log(e.stack);
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (form);
+
+/***/ }),
+
 /***/ "./assets/es6/blocks/forms.js":
 /*!************************************!*\
   !*** ./assets/es6/blocks/forms.js ***!
@@ -185,6 +222,32 @@ function modals() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (modals);
+
+/***/ }),
+
+/***/ "./assets/es6/blocks/point.js":
+/*!************************************!*\
+  !*** ./assets/es6/blocks/point.js ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function point() {
+  try {
+    const field = document.querySelector('.promotion__tools-left'),
+          cont = document.querySelector('.promotion__tools');
+    let contPos = cont.getBoundingClientRect().y + window.pageYOffset;
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset >= contPos && window.pageYOffset <= contPos + (cont.clientHeight - cont.clientHeight * 0.25)) {
+        field.style.cssText = `transform: translateY(${window.pageYOffset - contPos}px)`;
+      }
+    });
+  } catch (e) {
+    console.log(e.stack);
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (point);
 
 /***/ }),
 
@@ -328,6 +391,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_mask__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/mask */ "./assets/es6/blocks/mask.js");
 /* harmony import */ var _blocks_animate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/animate */ "./assets/es6/blocks/animate.js");
 /* harmony import */ var _blocks_modals__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/modals */ "./assets/es6/blocks/modals.js");
+/* harmony import */ var _blocks_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/form */ "./assets/es6/blocks/form.js");
+/* harmony import */ var _blocks_point__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/point */ "./assets/es6/blocks/point.js");
+
+
 
 
 
@@ -343,6 +410,8 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_mask__WEBPACK_IMPORTED_MODULE_3__["default"])('input[type="tel"]');
   (0,_blocks_animate__WEBPACK_IMPORTED_MODULE_4__["default"])();
   (0,_blocks_modals__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  (0,_blocks_form__WEBPACK_IMPORTED_MODULE_6__["default"])();
+  (0,_blocks_point__WEBPACK_IMPORTED_MODULE_7__["default"])();
 });
 }();
 /******/ })()

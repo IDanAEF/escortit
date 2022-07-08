@@ -41,7 +41,7 @@
                     <li>Вы пришли совершенно новым проектом</li>
                     <li>Ваш текущий веб-сайт устарел более чем на 5 лет</li>
                 </ul>
-                <button class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</button>
+                <a href="/services/create/" class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</a>
             </div>
             <img src="/assets/images/services/detserv1.png" alt="" class="services__item-image">
         </div>
@@ -58,7 +58,7 @@
                     <li>Вы пришли совершенно новым проектом</li>
                     <li>Ваш текущий веб-сайт устарел более чем на 5 лет</li>
                 </ul>
-                <button class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</button>
+                <a href="/services/promotion/" class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</a>
             </div>
         </div>
     </section>
@@ -73,7 +73,7 @@
                     <li>Вы пришли совершенно новым проектом</li>
                     <li>Ваш текущий веб-сайт устарел более чем на 5 лет</li>
                 </ul>
-                <button class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</button>
+                <a href="/services/assist/" class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</a>
             </div>
             <img src="/assets/images/services/detserv3.png" alt="" class="services__item-image">
         </div>
@@ -85,7 +85,7 @@
                 <div class="services__form-undertitle form_task-undertitle text text_fz20">Список услуг не конечный, более подробный перечень можно получив, связавшись с нами. Мы ориентируемся на комплексный подход для закрытия всех потребностей клиента.</div>
             </div>
             <div class="services__form-field form_task-field">
-                <form action="/mail/">
+                <form action="">
                     <div class="input_block">
                         <div class="input_block-item">
                             <label for="name" class="text text_fz16">Имя</label>

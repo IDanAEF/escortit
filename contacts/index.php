@@ -18,7 +18,7 @@
                 <div class="contacts__form-undertitle form_task-undertitle text text_fz20">Наша экспертиза и опыт помогут вам сэкономить огромное количество времени, если хотите получить результат, а не обещания, то обращайтесь к нам. Будем рады сотрудничеству.</div>
             </div>
             <div class="contacts__form-field form_task-field">
-                <form action="/mail/">
+                <form action="">
                     <div class="input_block">
                         <div class="input_block-item">
                             <label for="name" class="text text_fz16">Имя</label>

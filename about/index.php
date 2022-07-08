@@ -22,7 +22,7 @@
                     <span>Мы искренне пытаемся помочь в достижении вашей цели —  и это не просто слова.</span>
                     <span>Свяжитесь с нами, и вы убедитесь в этом сами.</span>
                 </div>
-                <button class="about__exp-button button text_white text_fz20 text_fw700 text_ffMerri">Написать нам</button>
+                <a href="/contacts/" class="about__exp-button button text_white text_fz20 text_fw700 text_ffMerri">Написать нам</a>
             </div>
         </div>
     </section>
