@@ -49,7 +49,7 @@
                     В данной отрасли мы работаем на протяжении 6 лет, за это время накопилось множество опыта по созданию такого рода проектов.
                     </p>
                 </div>
-                <button class="main__about-button button text_white text_fz20 text_fw700 text_ffMerri">О нас</button>
+                <a href="/about/" class="main__about-button button text_white text_fz20 text_fw700 text_ffMerri">О нас</a>
             </div>
         </div>
     </section>
@@ -150,7 +150,7 @@
                 <div class="main__call-top-item">У вас есть проект?</div>
                 <div class="main__call-top-item">У вас есть к нам вопросы?</div>
             </div>
-            <h2 class="main__call-title title title_fz64 text_fw700 text_ffMerri">Свяжитесь с нами</h2>
+            <a href="/contacts/" class="main__call-title title title_fz64 text_fw700 text_ffMerri">Свяжитесь с нами</a>
         </div>
     </section>
 </main>

@@ -82,7 +82,7 @@
     .services
         &__promo
             &-bg 
-                right: -18%
+                right: -33%
         &__list
             min-height: 750px
             padding: 150px 0px
@@ -196,6 +196,41 @@
         &__call 
             padding: 70px 0px
             min-height: 240px
+    .promotion
+        &__adv 
+            padding: 90px 0px
+            &-main 
+                margin: 70px 0px
+                &-img 
+                    width: 544px
+                &-text 
+                    width: 570px
+        &__tools
+            padding: 90px 0px
+            &-items 
+                margin-top: 66px
+        &__seo 
+            padding: 100px 0px
+            &-title 
+                width: 46%
+            &-undertitle
+                width: 41%
+            &-bott 
+                margin-top: 245px
+                &-item 
+                    max-width: 422px
+                    margin-bottom: 39px
+                &-center 
+                    top: -175px
+                    #seo 
+                        width: 393px
+                    #phone 
+                        width: 263px
+        &__planing
+            &-img 
+                width: 62%
+            &-text 
+                width: 35%
 @media (max-width: 1200px)
     p 
         margin-bottom: 30px
@@ -553,6 +588,54 @@
             &-title 
                 &::after
                     width: 397px
+    .promotion
+        &__adv 
+            &-main 
+                &-img 
+                    width: 495px
+                &-text 
+                    width: 448px
+            &-undertext
+                font-size: 22px
+                line-height: 27px
+                width: 100%
+        &__tools 
+            &-left 
+                width: 40%
+            &-right 
+                width: 56%
+            &-item 
+                &:not(:last-child)
+                    margin-bottom: 40px
+                    padding-bottom: 23px
+                &-title 
+                    margin-bottom: 30px
+                    padding-left: 32px
+                    &::before
+                        width: 18px
+                        height: 18px
+        &__seo 
+            padding: 75px 0px
+            &-undertitle
+                width: 48%
+            &-bott 
+                margin-top: 190px
+                &-item 
+                    max-width: 355px
+                    margin-bottom: 39px
+                    &-title 
+                        margin-bottom: 12px
+                &-center 
+                    top: -150px
+                    #phone
+                        width: 233px
+                        top: 58px
+                    #seo 
+                        width: 337px
+        &__call 
+            &-title 
+                font-size: 34px
+                line-height: 100%
 @media (max-width: 992px)
     p 
         margin-bottom: 20px
@@ -680,7 +763,7 @@
     .services
         &__promo 
             &-bg 
-                right: -52%
+                right: -55%
         &__list 
             min-height: 420px
             padding: 75px 0px
@@ -839,6 +922,74 @@
         &__call 
             min-height: 140px
             padding: 33px 0px
+    .promotion
+        &__adv 
+            padding: 70px 0px
+            &-main 
+                margin: 50px 0px
+                flex-direction: column
+                &-img 
+                    width: 580px
+                    margin-bottom: 25px
+                &-text 
+                    width: 100%
+            &-undertext 
+                font-size: 20px
+                line-height: 23px
+        &__tools 
+            padding: 70px 0px
+            &-items 
+                margin-top: 50px
+            &-item 
+                &:not(:last-child)
+                    margin-bottom: 26px
+                    padding-bottom: 15px
+                &-title 
+                    margin-bottom: 17px
+                    padding-left: 21px
+                    &::before
+                        width: 13px
+                        height: 13px
+            &-left 
+                span 
+                    margin-bottom: 18px
+                a 
+                    img 
+                        left: 125px
+                        width: 38px
+                        bottom: -10px
+        &__seo 
+            padding: 70px 0px
+            &-title 
+                width: 46%
+            &-undertitle
+                width: 50%
+            &-bott 
+                margin-top: 542px
+                &-item 
+                    max-width: 348px
+                    margin-bottom: 31px
+                &-center 
+                    top: -496px
+                    #seo 
+                        width: 271px
+                    #phone 
+                        width: 196px
+        &__planing
+            padding: 70px 0px
+            &-bott 
+                flex-direction: column
+            &-text 
+                width: 100%
+                margin-bottom: 40px
+            &-img 
+                width: 100%
+        &__call 
+            &-title 
+                font-size: 31px
+            &-top 
+                &-item 
+                    margin-bottom: 10px
 @media (max-width: 768px)
     .container
         width: 540px
@@ -973,7 +1124,7 @@
     .services
         &__promo 
             &-bg
-                right: -61%
+                right: -64%
         &__list 
             min-height: 400px
             padding: 56px 0px
@@ -1119,6 +1270,46 @@
                 filter: opacity(0.2)
             &-text 
                 width: 100%
+        &__call 
+            &-bg 
+                left: -59px
+    .promotion
+        &__adv
+            &-main 
+                &-img 
+                    width: 460px
+        &__tools 
+            &-items 
+                flex-direction: column
+                margin-top: 35px
+            &-left 
+                width: 100%
+            &-right
+                width: 100%
+                margin-top: 34px
+        &__seo 
+            &-top 
+                flex-direction: column
+            &-title 
+                width: 100%
+                margin-bottom: 25px
+            &-undertitle 
+                width: 100%
+            &-bott 
+                margin-top: 464px
+                flex-direction: column
+                &-item 
+                    max-width: 100%
+                    margin-bottom: 24px
+                    &-title 
+                        margin-bottom: 5px
+                &-center 
+                    top: -420px
+                    #seo
+                        width: 217px
+                    #phone
+                        width: 169px
+                        top: 35px 
 @media (max-width: 576px)
     p 
         margin-bottom: 13px
@@ -1281,3 +1472,15 @@
                     width: 249px
             &-bg 
                 filter: opacity(0.2)
+    .promotion
+        &__adv 
+            &-main 
+                &-img 
+                    width: 100%
+                    max-width: 385px
+            &-undertext 
+                font-size: 17px
+                line-height: 20px
+        &__planing
+            &-img 
+                width: 106%

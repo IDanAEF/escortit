@@ -73,7 +73,7 @@
                     <li>Вы пришли совершенно новым проектом</li>
                     <li>Ваш текущий веб-сайт устарел более чем на 5 лет</li>
                 </ul>
-                <a href="/services/assist/" class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</a>
+                <a href="/services/support/" class="services__item-button button button_black text text_fz20 text_fw700 text_ffMerri">Перейти к услуге</a>
             </div>
             <img src="/assets/images/services/detserv3.png" alt="" class="services__item-image">
         </div>

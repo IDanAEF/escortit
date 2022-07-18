@@ -42,7 +42,7 @@
             <div class="payment__call-text">
                 <div class="payment__call-title title title_fz39 text_fw700 text_ffMerri title_line">У вас возникли вопросы?</div>
                 <div class="payment__call-undertitle text text_fz20">В случае, если вам затруднительно самостоятельно оплатить через криптовалюту (вы не знаете что и как пользоваться), то наши менеджеры могут предоставить вам подробную инструкцию, как перевести деньги в криптовалюту и в дальнейшем осуществить перевод. В совокупности вся операция (перевод денег с карты в криптовалюту) займёт не более 15 минут вашего времени.</div>
-                <button class="payment__call-button button text_white text_fz20 text_fw700 text_ffMerri">Связаться с нами</button>
+                <a href="/contacts/" class="payment__call-button button text_white text_fz20 text_fw700 text_ffMerri">Связаться с нами</a>
             </div>
         </div>
     </section>
