@@ -741,6 +741,51 @@
                                 right: -25px
                             &:not(:last-child)
                                 margin-bottom: 32px
+        &__slider 
+            &-line 
+                margin-top: 50px
+            &-item 
+                &-descr 
+                    margin: 25px 0px
+                &-point 
+                    &:not(:last-child)
+                        margin-right: 60px
+                    span 
+                        margin-top: 0
+            &-arrows 
+                img 
+                    width: 37px
+                    &.left 
+                        margin-right: 9px
+        &__freq 
+            &-items 
+                margin-top: 22px
+            &-item 
+                width: 48%
+                &-number 
+                    margin-right: 22px
+                    font-size: 122px
+        &__mobile 
+            padding: 70px 0px
+            &-info 
+                width: 47%
+            &-image 
+                width: 50%
+        &__design
+            padding-bottom: 70px
+            &-top 
+                margin-bottom: 33px
+            &-info 
+                width: 49%
+            &-list 
+                margin-top: 28px
+                li 
+                    padding-left: 18px
+                    &::before
+                        width: 9px
+                        height: 9px
+                    &:not(:last-child)
+                        margin-bottom: 11px
 @media (max-width: 992px)
     p 
         margin-bottom: 20px
@@ -868,7 +913,7 @@
     .services
         &__promo 
             &-bg 
-                right: -356px
+                right: -432px
         &__list 
             min-height: 420px
             padding: 75px 0px
@@ -1095,6 +1140,37 @@
             &-top 
                 &-item 
                     margin-bottom: 10px
+    .support
+        &__main 
+            &-left 
+                .perks 
+                    width: 22px
+                    top: -17px
+        &__adv 
+            &-item 
+                padding: 23px 6px
+                width: 333px
+                min-height: 260px
+                margin: 0px 10px 10px
+                &-image 
+                    height: 76px
+                    max-width: 60px
+                    margin-bottom: 13px
+            &-way 
+                &-text 
+                    width: 50%
+                &-phone 
+                    width: 48%
+                    &-image 
+                        margin-left: 40px
+                        width: 183px
+                    &-dots 
+                        &::after
+                            top: 15px
+                            height: 93%
+        &__slider 
+            &-item 
+                align-items: center
 @media (max-width: 768px)
     .container
         width: 540px
@@ -1229,7 +1305,7 @@
     .services
         &__promo 
             &-bg
-                right: -333px
+                right: -382px
         &__list 
             min-height: 400px
             padding: 56px 0px
@@ -1415,6 +1491,79 @@
                     #phone
                         width: 169px
                         top: 35px 
+    .support
+        &__main 
+            padding: 50px 0px
+            &-blocks 
+                margin-top: 40px
+                flex-direction: column
+            &-left 
+                width: 100%
+                margin-bottom: 50px
+            &-right 
+                width: 100%
+        &__adv 
+            padding: 50px 0px
+            &-top 
+                flex-direction: column
+                margin-bottom: 80px
+            &-title 
+                width: 100%
+                margin-bottom: 24px
+            &-undertitle 
+                width: 100%
+            &-way 
+                flex-direction: column
+                &-text 
+                    width: 100%
+                &-phone 
+                    width: 100%
+                    justify-content: center 
+                    margin-top: 30px
+                    &-image 
+                        margin-left: 60px
+        &__slider 
+            padding: 50px 0px
+            &-line 
+                margin-top: 50px
+            &-item 
+                flex-direction: column
+                &-image 
+                    max-width: 75%
+                &-info 
+                    max-width: 100%
+                    margin-top: 30px
+            &-arrows 
+                display: flex
+                justify-content: center
+        &__freq 
+            &-items 
+                flex-direction: column
+            &-item 
+                width: 100%
+                margin-bottom: 20px
+                &-number 
+                    margin-right: 17px
+                    font-size: 103px
+                    min-width: 70px
+        &__mobile 
+            padding: 50px 0px
+            .container
+                flex-direction: column-reverse
+            &-info 
+                width: 100%
+                margin-top: 30px
+            &-image 
+                width: 90%
+        &__design
+            padding-bottom: 50px
+            &-top 
+                flex-direction: column
+            &-image 
+                width: 90%
+            &-info 
+                width: 100%
+                margin-top: 30px
 @media (max-width: 576px)
     p 
         margin-bottom: 13px
@@ -1589,3 +1738,13 @@
         &__planing
             &-img 
                 width: 106%
+    .support
+        &__adv 
+            &-way 
+                &-phone 
+                    &-image 
+                        width: 136px
+        &__slider 
+            &-item 
+                &-image 
+                    max-width: 90%
