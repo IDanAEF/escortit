@@ -21,11 +21,56 @@
                 top: -30px
             .supp
                 width: 527px
+                max-width: 100%
                 margin-top: 40px
     &__adv 
         background-color: #F5F6F7
         position: relative
         padding: 100px 0px
+        &-way 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-text 
+                width: 49%
+            &-phone
+                width: 39.575%
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                &-image 
+                    margin-left: 82px
+                    width: 296px
+                    z-index: 1
+                    filter: drop-shadow(57px 120px 53px rgba(0, 0, 0, 0.01)) drop-shadow(32px 67px 45px rgba(0, 0, 0, 0.05)) drop-shadow(14px 30px 33px rgba(0, 0, 0, 0.09)) drop-shadow(4px 7px 18px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1))
+                &-dots 
+                    list-style-type: none
+                    position: relative
+                    &::after
+                        content: ''
+                        position: absolute
+                        background-color: #B93839
+                        display: block
+                        width: 1px
+                        height: 95%
+                        right: -26px
+                        top: 8px
+                    li 
+                        position: relative
+                        text-align: center
+                        &::after
+                            content: ''
+                            display: block
+                            position: absolute
+                            background-color: #B93839
+                            width: 13px
+                            height: 13px
+                            border-radius: 100%
+                            top: 50%
+                            transform: translateY(-50%)
+                            right: -32px                      
+                        &:not(:last-child)
+                            margin-bottom: 57px
         &-bg 
             position: absolute
             bottom: 0
@@ -50,7 +95,7 @@
             transition: 0.5s all
             padding: 55px 14px
             width: 434px
-            height: 405px
+            min-height: 405px
             margin: 0px 18px 90px 18px
             display: flex
             flex-direction: column
@@ -61,6 +106,114 @@
                 display: flex
                 align-items: center
                 justify-content: center
-                margin-bottom: 53px       
+                margin-bottom: 53px
+                img 
+                    width: 100%   
             &:hover 
                 box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.12)
+    &__slider
+        padding: 170px 0px
+        &-arrows 
+            margin-top: 20px
+            img 
+                opacity: 0
+                visibility: hidden
+                transition: 0.5s all
+                cursor: pointer
+                &.left
+                    transform: translateY(-1px)
+                    margin-right: 25px
+                &.active
+                    opacity: 1
+                    visibility: visible
+        &-line 
+            margin-top: 90px
+        &-item 
+            display: flex
+            justify-content: space-between
+            height: 0
+            opacity: 0
+            visibility: hidden
+            transition: 0.5s all
+            &-bott 
+                display: flex
+            &-point 
+                display: flex
+                flex-direction: column
+                &:not(:last-child)
+                    margin-right: 100px
+                span 
+                    margin-top: 16px
+            &-descr
+                margin: 30px 0px 70px
+            &-image 
+                max-width: 48.23%
+            &-info 
+                max-width: 47.24%
+            &.active
+                opacity: 1
+                visibility: visible
+                height: auto
+    &__freq
+        &-title 
+            text-align: center
+        &-items 
+            margin-top: 60px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-item 
+            width: 40%
+            display: flex
+            align-items: center
+            &-number 
+                font-size: 175px
+                line-height: 100%
+                margin-right: 50px
+                background: linear-gradient(75.68deg, #F0F0F2 13.42%, #E4E4E5 78.2%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                background-clip: text
+                text-fill-color: transparent
+    &__mobile
+        padding: 170px 0px 130px
+        &-image 
+            width: 55.532%
+        &-info 
+            width: 37.589%
+        &-title
+            margin-bottom: 30px
+        .container 
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &__design
+        margin-bottom: 100px
+        &-top 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 60px
+        &-image 
+            width: 47.03%
+        &-info 
+            width: 45.603%
+        &-list 
+            margin-top: 70px
+            list-style-type: none
+            li 
+                position: relative
+                padding-left: 22px
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    background-color: #B93839
+                    width: 12px
+                    height: 12px
+                    border-radius: 100%
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                &:not(:last-child)
+                    margin-bottom: 18px

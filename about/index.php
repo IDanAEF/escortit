@@ -59,9 +59,9 @@
     <section class="about__slider">
         <div class="container">
             <h2 class="about__slider-title title title_fz39 text_fw700 text_ffMerri title_line">Наше портфолио</h2>
-            <div class="about__slider-line">
+            <div class="about__slider-line ah-field-slider">
                 <div class="about__slider-items">
-                    <div class="about__slider-item">
+                    <div class="about__slider-item ah-item-slider">
                         <div class="about__slider-item-image">
                             <img src="/assets/images/cases/portcase1.png" alt="">
                         </div>
@@ -73,7 +73,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="about__slider-item">
+                    <div class="about__slider-item ah-item-slider">
                         <div class="about__slider-item-image">
                             <img src="/assets/images/cases/portcase1.png" alt="">
                         </div>
@@ -85,7 +85,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="about__slider-item">
+                    <div class="about__slider-item ah-item-slider">
                         <div class="about__slider-item-image">
                             <img src="/assets/images/cases/portcase1.png" alt="">
                         </div>
@@ -98,14 +98,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="about__slider-arrows text text_fz16">
-                    <div class="about__slider-arrows-item left">
+                <div class="about__slider-arrows text text_fz16 ah-arrows-slider">
+                    <div class="about__slider-arrows-item left ah-left-slider">
                         <span>Предыдущий кейс</span>
-                        <img src="/assets/images/arr_left_light.svg" alt="">
+                        <img src="/assets/images/arr_left_light.svg" alt="left">
                     </div>
-                    <div class="about__slider-arrows-item right">
+                    <div class="about__slider-arrows-item right ah-right-slider">
                         <span>Следующий кейс</span>
-                        <img src="/assets/images/arr_right_light.svg" alt="">
+                        <img src="/assets/images/arr_right_light.svg" alt="right">
                     </div>
                 </div>
             </div>
