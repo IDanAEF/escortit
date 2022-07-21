@@ -84,6 +84,59 @@ function slider() {
     } catch(e) {
         console.log(e.stack);
     }
+
+    //create steps
+    try {
+        const sLevels = document.querySelectorAll('.create__slider-level'),
+              sItems = document.querySelectorAll('.create__slider-item'),
+              sLine = document.querySelector('.create__slider-line');
+
+        let curr = 0;
+
+        const setStep = (i = 0) => {
+            sLevels.forEach(item => {
+                item.classList.remove('active');
+                item.classList.remove('line');
+            });
+            sItems.forEach(item => item.classList.remove('active'));
+
+            curr = i;
+
+            sLevels[curr].classList.add('active');
+            sItems[curr].classList.add('active');
+            for (let ind = 1; ind <= curr + 1; ind++) {
+                if (sLevels[ind]) {
+                    sLevels[ind].classList.add('line')
+                }
+            }
+        }
+
+        setStep();
+
+        sLevels.forEach((level, i) => {
+            level.addEventListener('click', () => {
+                setStep(i);
+            });
+        });
+
+        let startPos = 0;
+        
+        sLine.addEventListener('touchstart', (e) => {
+            startPos = e.changedTouches[0].screenX;
+        });
+    
+        sLine.addEventListener('touchend', (e) => {
+            if (startPos - e.changedTouches[0].screenX > 50) {
+                curr == sItems.length - 1 ? curr = 0 : curr++;
+                setStep(curr);
+            } else if (startPos - e.changedTouches[0].screenX < -50) {
+                curr == 0 ? curr = sItems.length - 1 : curr--;
+                setStep(curr);
+            }
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default slider;

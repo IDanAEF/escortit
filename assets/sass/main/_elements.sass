@@ -57,6 +57,7 @@
             left: 0
             top: -10px
 .button
+    display: inline-block
     padding: 15px 86px
     background-color: #B93839
     border-radius: 3px
@@ -64,13 +65,17 @@
     cursor: pointer
     transition: 0.4s all
     &:hover 
+        background-color: #D63132
+    &.click
         background-color: #A51B1D
     &_black
         border: 2px solid #000000
         background-color: #F2F2F4
-        &:hover
-            background-color: #000
+        &.click
+            background-color: #000 !important
             color: #fff
+        &:hover
+            background-color: #fff
 .img
     &_bg
         position: absolute
