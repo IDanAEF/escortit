@@ -78,10 +78,10 @@
             </div>
             <div class="create__slider-line text text_fz20">
                 <div class="create__slider-steps text_fw600">
-                    <div class="create__slider-level"><span class="text_fw500">Макеты сайтов</span>01</div>
-                    <div class="create__slider-level"><span class="text_fw500">Разработка брендинга</span>02</div>
-                    <div class="create__slider-level"><span class="text_fw500">Дизайн лого</span>03</div>
-                    <div class="create__slider-level"><span class="text_fw500">Мобильная версия сайта</span>04</div>
+                    <div class="create__slider-level text_ffMont"><span class="text_fw500 text_ffMont">Макеты сайтов</span>01</div>
+                    <div class="create__slider-level text_ffMont"><span class="text_fw500 text_ffMont">Разработка брендинга</span>02</div>
+                    <div class="create__slider-level text_ffMont"><span class="text_fw500 text_ffMont">Дизайн лого</span>03</div>
+                    <div class="create__slider-level text_ffMont"><span class="text_fw500 text_ffMont">Мобильная версия сайта</span>04</div>
                 </div>
                 <div class="create__slider-items">
                     <div class="create__slider-item">
